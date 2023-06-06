@@ -419,7 +419,7 @@ def cluster_iter(tree, instances, heuristic=CU, minsplit=1, maxsplit=100000,
         else:
             raise ValueError('unkown heuristic provided as str', heuristic)
 
-    tree = copy.deepcopy(tree)
+    # tree = copy.deepcopy(tree)
 
     if mod:
         temp_clusters = [tree.ifit(instance) for instance in instances]
